@@ -1,0 +1,12 @@
+@isTest
+public class TestVerifyDate {
+    @isTest public static void test(){
+    	 Date Date1 = Date.newInstance(2008, 2, 1);
+   		 Date Date2 = Date.newInstance(2008, 1, 1);     
+        test.startTest();
+        	  VerifyDate.CheckDates(Date1,Date2);
+              VerifyDate.CheckDates(Date2,Date1);
+       		  VerifyDate.CheckDates(Date2,Date2);
+        test.stopTest();
+    }
+}
